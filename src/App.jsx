@@ -27,7 +27,7 @@ function App() {
       <Navbar setMenu={setMenu} />
       <Routes>
         <Route
-          path="/restaurant/"
+          path="/"
           element={
             <Home
               menu={menu}
@@ -40,7 +40,7 @@ function App() {
           }
         ></Route>
         <Route
-          path="/restaurant/cart"
+          path="/cart"
           element={
             <Cart
               cartItem={cartItem}
@@ -51,10 +51,10 @@ function App() {
           }
         ></Route>
         <Route
-          path="/restaurant/place-order"
+          path="/place-order"
           element={<PlaceOrder cartItem={cartItem} />}
         ></Route>
-        <Route path="/restaurant/sign-in" element={<SignIn />}></Route>
+        <Route path="/sign-in" element={<SignIn />}></Route>
       </Routes>
       <Footer />
     </div>

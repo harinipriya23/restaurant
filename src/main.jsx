@@ -6,7 +6,7 @@ import { BrowserRouter } from "react-router-dom";
 import FoodContextProvider from "./context/FoodContext.jsx";
 
 createRoot(document.getElementById("root")).render(
-  <BrowserRouter>  
+  <BrowserRouter basename='/restaurant'>  
     <FoodContextProvider>
       <React.StrictMode>
         <App />
